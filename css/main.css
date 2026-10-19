@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333333;
+  background-color: #f9f9f9;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar {
+  background-color: #1a1a1a;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.navbar .nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+.navbar .logo {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+.navbar .nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+.navbar .nav-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.navbar .nav-links a:hover {
+  color: #e74c3c;
+}
+@media (max-width: 768px) {
+  .navbar .nav-links {
+    display: none;
+  }
+}
+
+.hero-header {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://picsum.photos/1200/500") center/cover;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+.hero-header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+}
+.hero-header p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.featured-products {
+  padding: 60px 0;
+  text-align: center;
+}
+.featured-products .section-title {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #2c3e50;
+}
+.featured-products .product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+.featured-products .product-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+.featured-products .product-card:hover {
+  transform: translateY(-8px);
+}
+.featured-products .product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+.featured-products .product-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.featured-products .product-card .price {
+  color: #e74c3c;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.stats-section {
+  background-color: #2c3e50;
+  color: white;
+  padding: 50px 0;
+}
+.stats-section .stats-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.stats-section .stat-item {
+  text-align: center;
+}
+.stats-section .stat-item .stat-number {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #e74c3c;
+}
+.stats-section .stat-item .stat-label {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 40px 0 20px;
+}
+.footer .footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+.footer .footer-col {
+  flex: 1;
+  min-width: 250px;
+}
+.footer .footer-col h4 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #e74c3c;
+}
+.footer .footer-col p, .footer .footer-col ul {
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+.footer .footer-col ul {
+  list-style: none;
+}
+.footer .footer-col ul a {
+  color: white;
+  text-decoration: none;
+}
+.footer .footer-col ul a:hover {
+  color: #e74c3c;
+}
+.footer .copyright {
+  text-align: center;
+  border-top: 1px solid rgb(25.1960784314%, 25.1960784314%, 25.1960784314%);
+  padding-top: 20px;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+/*# sourceMappingURL=main.css.map */

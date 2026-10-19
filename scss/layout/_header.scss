@@ -1,0 +1,55 @@
+.navbar {
+  background-color: $bg-dark;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  
+  .nav-container {
+    @include flex-center(space-between, center);
+    padding: 15px 20px;
+  }
+
+  .logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+
+    a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s;
+
+      &:hover {
+        color: $accent-color;
+      }
+    }
+
+    @include respond-to(tablet) {
+      display: none;
+    }
+  }
+}
+
+.hero-header {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://picsum.photos/1200/500') center/cover;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+
+  h1 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+  }
+
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+  }
+}
